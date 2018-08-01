@@ -1,0 +1,15 @@
+{
+    "verbose": false,
+    "ignore": [
+
+    ],
+    "watch": [
+        "app/",
+        "truffle.js"
+    ],
+    "execMap" : {
+        "js": "truffle exec",
+        "file": "truffle exec"
+    },
+    "ext": "js file"
+}

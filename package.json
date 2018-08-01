@@ -1,0 +1,41 @@
+{
+  "name": "crypto-pets",
+  "version": "1.0.0",
+  "description": "API for crypto pets dapp",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "build": "rm -rf build && truffle compile --all",
+    "deploy": "truffle migrate --reset --network testrpc",
+    "deploy-staging": "truffle migrate --reset --network rinkeby",
+    "start": "NODE_ENV=development nodemon app/app.js --network testrpc",
+    "staging": "NODE_ENV=staging nodemon app/app.js --network rinkeby",
+    "final": "NODE_ENV=final nodemon app/app.js --network rinkeby"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ldmtam95@bitbucket.org/ldmtam95/crypto-pets.git"
+  },
+  "keywords": [
+    "api",
+    "dapp"
+  ],
+  "author": "Tam Le",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ldmtam95/crypto-pets#readme",
+  "dependencies": {
+    "base64-img": "^1.0.4",
+    "body-parser": "^1.18.2",
+    "canvas": "^1.6.10",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "log4js": "^2.5.3",
+    "mooncatparser": "^1.0.0",
+    "mysql2": "^1.5.3",
+    "sequelize": "^4.37.6",
+    "truffle-hdwallet-provider": "0.0.3"
+  }
+}
